@@ -2,3 +2,244 @@
 
 /* Header Navigation */
 .header-nav{list-style:none;margin:15px 0 0;padding:0;display:flex;flex-wrap:wrap;gap:5px}.header-nav li{margin:0}.header-nav a{display:inline-block;padding:6px 14px;color:#fff;text-decoration:none;font-size:1.3rem;background-color:rgba(255,255,255,.15);border-radius:20px;transition:background-color .3s,transform .2s}.header-nav a:hover{background-color:rgba(255,255,255,.3);transform:translateY(-2px);color:#fff}.dark .header-nav a{background-color:rgba(255,255,255,.1)}.dark .header-nav a:hover{background-color:rgba(255,255,255,.25)}@media screen and (max-width:768px){.header-nav{justify-content:center;margin-top:10px}.header-nav a{padding:5px 10px;font-size:1.1rem}}html{scroll-behavior:smooth}
+
+/* Mobile Responsive Styles */
+@media screen and (max-width: 768px) {
+    /* Typography */
+    h1 {
+        font-size: 2.5rem !important;
+        margin-bottom: 0.5rem;
+    }
+    
+    h2 {
+        font-size: 1.5rem !important;
+        margin-bottom: 0.5rem;
+    }
+    
+    h3 {
+        font-size: 2rem !important;
+        padding-bottom: 8px;
+        margin-bottom: 25px;
+    }
+    
+    h4 {
+        font-size: 1.8rem !important;
+    }
+    
+    p, ul, a i {
+        font-size: 1.4rem !important;
+        line-height: 1.6;
+    }
+    
+    /* Header */
+    .header-container {
+        margin-top: 20px;
+        padding: 0 15px;
+    }
+    
+    .header-left {
+        margin: 0;
+        text-align: center;
+    }
+    
+    .header-right {
+        text-align: center;
+        margin: 15px 0;
+    }
+    
+    .header-right p {
+        font-size: 1.3rem !important;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    
+    /* Navigation */
+    .header-nav {
+        justify-content: center;
+        margin-top: 15px;
+        gap: 8px;
+    }
+    
+    .header-nav a {
+        padding: 6px 12px;
+        font-size: 1rem;
+    }
+    
+    /* Icons */
+    .icons {
+        text-align: center;
+        margin: 15px 0;
+    }
+    
+    .button.button--sacnite {
+        width: 50px;
+        height: 50px;
+        margin: 5px;
+    }
+    
+    .icons i {
+        font-size: 24px;
+        line-height: 50px;
+    }
+    
+    /* Profile Image */
+    .profile-img {
+        width: 150px;
+        height: 150px;
+        margin: 0 auto 20px;
+    }
+    
+    /* Container */
+    .container {
+        margin-top: 20px;
+        margin-bottom: 15px;
+        padding: 0 15px;
+    }
+    
+    .intro-container {
+        padding: 0 10px;
+    }
+    
+    /* Layout */
+    .layout {
+        margin-top: 2rem;
+        flex-direction: column;
+    }
+    
+    .layout .details {
+        text-align: center !important;
+        margin-bottom: 1.5rem;
+    }
+    
+    .layout .details p {
+        text-align: center !important;
+        font-size: 1.4rem;
+    }
+    
+    /* Tables */
+    table {
+        width: 100% !important;
+        font-size: 1.2rem;
+        display: block;
+        overflow-x: auto;
+    }
+    
+    td, th {
+        padding: 0.5rem;
+        font-size: 1.2rem;
+    }
+    
+    /* Footer */
+    .footer-container {
+        margin-top: 50px;
+        padding: 0 15px;
+    }
+    
+    /* Text Container */
+    .text-container {
+        padding: 0 10px;
+    }
+    
+    /* Mark tags */
+    mark {
+        font-size: 85%;
+        padding: 2px 6px;
+        display: inline-block;
+        word-break: break-word;
+    }
+    
+    /* Row adjustments */
+    .row {
+        margin: 0;
+    }
+    
+    [class*="col-"] {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    /* Extra small devices */
+    h1 {
+        font-size: 2rem !important;
+    }
+    
+    h2 {
+        font-size: 1.3rem !important;
+    }
+    
+    h3 {
+        font-size: 1.6rem !important;
+        margin-bottom: 20px;
+    }
+    
+    h4 {
+        font-size: 1.5rem !important;
+    }
+    
+    p, ul, a i {
+        font-size: 1.2rem !important;
+    }
+    
+    .header-nav a {
+        padding: 5px 8px;
+        font-size: 0.9rem;
+    }
+    
+    .profile-img {
+        width: 120px;
+        height: 120px;
+    }
+    
+    .header-right p {
+        font-size: 1.1rem !important;
+    }
+    
+    .button.button--sacnite {
+        width: 45px;
+        height: 45px;
+    }
+    
+    .icons i {
+        font-size: 20px;
+        line-height: 45px;
+    }
+    
+    .container {
+        padding: 0 10px;
+    }
+    
+    table {
+        font-size: 1rem;
+    }
+    
+    td, th {
+        font-size: 1rem;
+        padding: 0.4rem;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    h1 {
+        font-size: 1.8rem !important;
+    }
+    
+    h2 {
+        font-size: 1.2rem !important;
+    }
+    
+    h3 {
+        font-size: 1.4rem !important;
+    }
+    
+    .header-nav {
+        flex-direction: column;
+        gap: 5px;
+    }
+    
+    .header-nav a {
+        width: 100%;
+        text-align: center;
+    }
+}
