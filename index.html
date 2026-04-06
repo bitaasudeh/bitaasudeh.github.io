@@ -110,28 +110,38 @@
             </div>
             <div class="container list-container">
                 <h3 id="publications">Publications</h3>
-                <p style="margin-bottom: 20px; font-size: 1.05rem; color: #888; font-weight: 600; letter-spacing: 0.5px; border-bottom: 1px solid rgba(128,128,128,0.2); padding-bottom: 8px;"><i>Under Review</i></p>
+                <details name="pub-accordion" style="border-left: 4px solid #4A90D9; padding: 16px 22px; margin-bottom: 16px; border-radius: 6px; background: linear-gradient(135deg, rgba(74,144,217,0.06), rgba(74,144,217,0.02)); box-shadow: 0 2px 6px rgba(0,0,0,0.04); cursor: pointer;">
+                    <summary>
+                        <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 6px;">
+                            <span style="background: #4A90D9; color: #fff; font-size: 0.78rem; font-weight: 700; padding: 3px 10px; border-radius: 12px; letter-spacing: 0.5px;">VLDB 2026</span>
+                            <span style="background: #888; color: #fff; font-size: 0.78rem; font-weight: 700; padding: 3px 10px; border-radius: 12px; letter-spacing: 0.5px;">Under Revision</span>
+                        </div>
+                        <strong style="font-size: 1.08rem; line-height: 1.5;">Unbiased Binning: Fairness-aware Attribute Representation</strong>
+                    </summary>
+                    <p style="margin-top: 12px; font-size: 0.95rem; line-height: 1.6; color: #555;">Discretizing raw features into bucketized attribute representations is a popular step before sharing a dataset. It is, however, evident that this step can cause significant bias in data and amplify unfairness in downstream tasks. In this paper, we address this issue by introducing the unbiased binning problem that, given an attribute to bucketize, finds its closest discretization to equal-size binning that satisfies group parity across different buckets. Defining a small set of boundary candidates, we prove that unbiased binning must select its boundaries from this set. We then develop an efficient dynamic programming algorithm on top of the boundary candidates to solve the unbiased binning problem. Finding an unbiased binning may sometimes result in a high price of fairness, or it may not even exist, especially when group values follow different distributions. Considering that a small bias in the group ratios may be tolerable in such settings, we introduce the &epsilon;-biased binning problem that bounds the group disparities across buckets to a small value &epsilon;. We first develop a dynamic programming solution DP that finds the optimal binning in quadratic time. The DP algorithm, while polynomial, does not scale to very large settings. Therefore, we propose a practically scalable algorithm, based on local search (LS), for &epsilon;-biased binning. The key component of the LS algorithm is a divide-and-conquer (D&amp;C) algorithm that finds a near-optimal solution for the problem in near-linear time. We prove that D&amp;C finds a valid solution for the problem unless none exists. The LS algorithm then initiates a local search, using the D&amp;C solution as the upper bound, to find the optimal solution.</p>
+                </details>
 
-                <div style="border-left: 4px solid #4A90D9; padding: 16px 22px; margin-bottom: 16px; border-radius: 6px; background: linear-gradient(135deg, rgba(74,144,217,0.06), rgba(74,144,217,0.02)); box-shadow: 0 2px 6px rgba(0,0,0,0.04); transition: transform 0.2s;">
-                    <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 6px;">
-                        <span style="background: #4A90D9; color: #fff; font-size: 0.78rem; font-weight: 700; padding: 3px 10px; border-radius: 12px; letter-spacing: 0.5px;">VLDB 2026</span>
-                    </div>
-                    <strong style="font-size: 1.08rem; line-height: 1.5;">Unbiased Binning: Fairness-aware Attribute Representation</strong>
-                </div>
+                <details name="pub-accordion" style="border-left: 4px solid #50B88E; padding: 16px 22px; margin-bottom: 16px; border-radius: 6px; background: linear-gradient(135deg, rgba(80,184,142,0.06), rgba(80,184,142,0.02)); box-shadow: 0 2px 6px rgba(0,0,0,0.04); cursor: pointer;">
+                    <summary>
+                        <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 6px;">
+                            <span style="background: #50B88E; color: #fff; font-size: 0.78rem; font-weight: 700; padding: 3px 10px; border-radius: 12px; letter-spacing: 0.5px;">VLDB 2026</span>
+                            <span style="background: #888; color: #fff; font-size: 0.78rem; font-weight: 700; padding: 3px 10px; border-radius: 12px; letter-spacing: 0.5px;">Under Review</span>
+                        </div>
+                        <strong style="font-size: 1.08rem; line-height: 1.5;">A Portable Middleware for Plan-Based Adaptive Query Processing</strong>
+                    </summary>
+                    <p style="margin-top: 12px; font-size: 0.95rem; line-height: 1.6; color: #555;">Inaccurate cardinality estimation is a major performance bottleneck for many database management systems (DBMS). Plan-based adaptive query processing (AQP) has been widely studied to address this issue, but existing solutions are tightly coupled to specific database engines, making them difficult to reuse or extend. This paper presents AQPHub, an extensible framework for plan-based AQP that decouples AQP strategies from specific engines. This is achieved by providing a middleware that leverages a SQL-based interface, requiring minimal effort to port to a new DBMS. Users can easily extend AQPHub by integrating different DBMSs and/or designing different AQP strategies. AQPHub shows negligible overhead while preserving the benefits of the state-of-the-art plan-based AQP methods. Our demonstration scenarios enable attendees to interact through a web interface and explore five database systems on four different AQP strategies and integration levels.</p>
+                </details>
 
-                <div style="border-left: 4px solid #50B88E; padding: 16px 22px; margin-bottom: 16px; border-radius: 6px; background: linear-gradient(135deg, rgba(80,184,142,0.06), rgba(80,184,142,0.02)); box-shadow: 0 2px 6px rgba(0,0,0,0.04); transition: transform 0.2s;">
-                    <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 6px;">
-                        <span style="background: #50B88E; color: #fff; font-size: 0.78rem; font-weight: 700; padding: 3px 10px; border-radius: 12px; letter-spacing: 0.5px;">Under Review</span>
-                    </div>
-                    <strong style="font-size: 1.08rem; line-height: 1.5;">A Portable Middleware for Plan-Based Adaptive Query Processing</strong>
-                </div>
-
-                <div style="border-left: 4px solid #9B6EC5; padding: 16px 22px; margin-bottom: 16px; border-radius: 6px; background: linear-gradient(135deg, rgba(155,110,197,0.06), rgba(155,110,197,0.02)); box-shadow: 0 2px 6px rgba(0,0,0,0.04); transition: transform 0.2s;">
-                    <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 6px;">
-                        <span style="background: #9B6EC5; color: #fff; font-size: 0.78rem; font-weight: 700; padding: 3px 10px; border-radius: 12px; letter-spacing: 0.5px;">EuroMLSys 2026 - Accepted</span>
-                    </div>
-                    <strong style="font-size: 1.08rem; line-height: 1.5;">Towards a Solution to the Management Scaling Paradox in Distributed LLM Inference</strong>
-                </div>
+                <details name="pub-accordion" style="border-left: 4px solid #9B6EC5; padding: 16px 22px; margin-bottom: 16px; border-radius: 6px; background: linear-gradient(135deg, rgba(155,110,197,0.06), rgba(155,110,197,0.02)); box-shadow: 0 2px 6px rgba(0,0,0,0.04); cursor: pointer;">
+                    <summary>
+                        <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 6px;">
+                            <span style="background: #9B6EC5; color: #fff; font-size: 0.78rem; font-weight: 700; padding: 3px 10px; border-radius: 12px; letter-spacing: 0.5px;">EuroMLSys 2026</span>
+                            <span style="background: #888; color: #fff; font-size: 0.78rem; font-weight: 700; padding: 3px 10px; border-radius: 12px; letter-spacing: 0.5px;">Accepted</span>
+                        </div>
+                        <strong style="font-size: 1.08rem; line-height: 1.5;">Towards a Solution to the Management Scaling Paradox in Distributed LLM Inference</strong>
+                    </summary>
+                    <p style="margin-top: 12px; font-size: 0.95rem; line-height: 1.6; color: #555;">In disaggregated LLM serving, prefix caching avoids redundant prefill by reusing KV cache across nodes, but existing systems manage this cache entirely in user space&mdash;atop the OS kernel that already manages memory, page tables, and RDMA registration. Our instrumented profiling of the state-of-the-art LMCache + Mooncake stack reveals a management scaling paradox: user-space overhead from coordination RPCs, redundant memory copies, and transfer fragmentation grows to 79% of achievable time-to-first-token (TTFT) as the cache warms, nearly doubling latency when caching should help most. We present RMC (Remote Memory for Cache), an in-kernel framework that extends OS-provided shared memory&mdash;already used locally via /dev/shm in systems like vLLM&mdash;to cluster-wide scope. RMC exploits two KV cache properties&mdash;fixed per-token size and content-determined identity&mdash;to provide a content-addressed Partitioned Global Address Space where any node computes the address of any cached chunk without coordination. Across four representative workloads, RMC achieves 1.1&ndash;1.3&times; TTFT reduction over LMCache + Mooncake and up to 2.1&times; over full recompute.</p>
+                </details>
             </div>
             <div class="container list-container">
                 <h3 id="teaching">Teaching Assistantship</h3>
