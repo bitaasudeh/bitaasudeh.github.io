@@ -71,7 +71,7 @@
                 <li><a href="#service">Service</a></li>
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#awards">Awards</a></li>
-                <li><a href="#projects">Projects</a></li>
+                <!-- <li><a href="#projects">Projects</a></li> -->
                 <li><a href="#skills">Skills</a></li>
             </ul>
         </nav>
@@ -83,23 +83,23 @@
 
                 <section id="about">
                     <h2>Bita Asoodeh</h2>
-                    <p>Bita Asoodeh is an M.Sc. by Research student at the Institute for Computing Systems Architecture (ICSA), School of Informatics, University of Edinburgh, UK (2025&ndash;present), supervised by <a href="https://www.barbalace.it/antonio/">Prof. Antonio Barbalace</a>. Her current research focuses on AI and systems for AI. She also has research experience in just-in-time (JIT) compilation for PostgreSQL, with a focus on improving database query processing.</p>
+                    <p>Bita Asoodeh is an M.Sc. by Research student at the Institute for Computing Systems Architecture (ICSA), School of Informatics, University of Edinburgh, UK (2025&ndash;present), supervised by <a href="https://www.barbalace.it/antonio/">Prof. Antonio Barbalace</a>. Her current research focuses on AI and systems for AI. She also has research experience in just-in-time (JIT) compilation for PostgreSQL database, with a focus on improving database query processing.</p>
                 </section>
 
                 <section id="news">
                     <h2>Recent News</h2>
                     <ul>
+                        <li>May 2026. <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=4f6CSL0AAAAJ&amp;citation_for_view=4f6CSL0AAAAJ:u5HHmVD_uO8C">Unbiased binning for fairness-aware attribute representation</a> has been accepted to VLDB&rsquo;26.</li>
+                        <li>May 2026. <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=4f6CSL0AAAAJ&amp;citation_for_view=4f6CSL0AAAAJ:d1gkVwhDpl0C">AQPHub</a> has been accepted as a demo in VLDB&rsquo;26.</li>
                         <li>April 2026. Volunteered at <a href="https://2026.eurosys.org/">EuroSys 2026</a> in Edinburgh.</li>
-                        <li>2026. Our paper on the management scaling paradox in distributed LLM inference has been accepted to EuroMLSys&rsquo;26.</li>
-                        <li>Winter 2026. Teaching assistant for Operating Systems.</li>
-                        <li>2025. Started the M.Sc. by Research at the University of Edinburgh, supported by a School of Informatics scholarship.</li>
+                        <li>April 2026. <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=4f6CSL0AAAAJ&amp;citation_for_view=4f6CSL0AAAAJ:u-x6o8ySG0sC">Towards a solution to the management scaling paradox in distributed LLM inference</a> has been accepted to EuroMLSys&rsquo;26.</li>
                     </ul>
                 </section>
 
                 <section id="education">
                     <h2>Education</h2>
                     <ul>
-                        <li><strong>M.Sc. by Research, Computer Science</strong>, University of Edinburgh, UK, 2025&ndash;present.<br>Supervisors: Prof. Antonio Barbalace and Prof. Amir Shaikhha.</li>
+                        <li><strong>M.Sc. by Research, Computer Science</strong>, University of Edinburgh, UK, 2025&ndash;present.<br>Supervisor: Prof. Antonio Barbalace.</li>
                         <li><strong>B.Sc., Computer Science</strong>, University of Isfahan, Iran, graduated July 2020.</li>
                     </ul>
                 </section>
@@ -111,10 +111,10 @@
 
                     <article class="pub-item">
                         <header>
-                            <div class="pub-title">Unbiased Binning for Fairness-aware Attribute Representation</div>
+                            <div class="pub-title"><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=4f6CSL0AAAAJ&amp;citation_for_view=4f6CSL0AAAAJ:u5HHmVD_uO8C">Unbiased Binning for Fairness-aware Attribute Representation</a></div>
                             <div class="pub-venue"><span class="tooltip" data-venue="International Conference on Very Large Data Bases"><a href="https://vldb.org/2026/">VLDB</a></span></div>
                             <div class="pub-authors">A. Asudeh, Z. Asoodeh, B. Asoodeh, O. Asudeh</div>
-                            <div class="pub-note">Under revision &middot; <a href="https://arxiv.org/abs/2509.21785">arXiv</a></div>
+                            <div class="pub-note">Accepted &middot; <a href="https://arxiv.org/abs/2509.21785">arXiv</a></div>
                             <details class="pub-abstract">
                                 <summary>Abstract</summary>
                                 <p>Discretizing raw features into bucketized attribute representations is a popular step before sharing a dataset. It is, however, evident that this step can cause significant bias in data and amplify unfairness in downstream tasks. In this paper, we address this issue by introducing the unbiased binning problem that, given an attribute to bucketize, finds its closest discretization to equal-size binning that satisfies group parity across different buckets. Defining a small set of boundary candidates, we prove that unbiased binning must select its boundaries from this set. We then develop an efficient dynamic programming algorithm on top of the boundary candidates to solve the unbiased binning problem. Finding an unbiased binning may sometimes result in a high price of fairness, or it may not even exist, especially when group values follow different distributions. Considering that a small bias in the group ratios may be tolerable in such settings, we introduce the &epsilon;-biased binning problem that bounds the group disparities across buckets to a small value &epsilon;. We first develop a dynamic programming solution DP that finds the optimal binning in quadratic time. The DP algorithm, while polynomial, does not scale to very large settings. Therefore, we propose a practically scalable algorithm, based on local search (LS), for &epsilon;-biased binning. The key component of the LS algorithm is a divide-and-conquer (D&amp;C) algorithm that finds a near-optimal solution for the problem in near-linear time. We prove that D&amp;C finds a valid solution for the problem unless none exists. The LS algorithm then initiates a local search, using the D&amp;C solution as the upper bound, to find the optimal solution.</p>
@@ -124,10 +124,10 @@
 
                     <article class="pub-item">
                         <header>
-                            <div class="pub-title">A Portable Middleware for Plan-Based Adaptive Query Processing <i>(Demo)</i></div>
+                            <div class="pub-title"><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=4f6CSL0AAAAJ&amp;citation_for_view=4f6CSL0AAAAJ:d1gkVwhDpl0C">A Portable Middleware for Plan-Based Adaptive Query Processing</a> <i>(Demo)</i></div>
                             <div class="pub-venue"><span class="tooltip" data-venue="International Conference on Very Large Data Bases"><a href="https://vldb.org/2026/">VLDB</a></span></div>
-                            <div class="pub-authors">P. Mu, B. Asudeh, A. C. Carniel, A. Shaikhha</div>
-                            <div class="pub-note">Under review</div>
+                            <div class="pub-authors">P. Mu, B. Asoodeh, A. C. Carniel, A. Shaikhha</div>
+                            <div class="pub-note">Accepted</div>
                             <details class="pub-abstract">
                                 <summary>Abstract</summary>
                                 <p>Inaccurate cardinality estimation is a major performance bottleneck for many database management systems (DBMS). Plan-based adaptive query processing (AQP) has been widely studied to address this issue, but existing solutions are tightly coupled to specific database engines, making them difficult to reuse or extend. This paper presents AQPHub, an extensible framework for plan-based AQP that decouples AQP strategies from specific engines. This is achieved by providing a middleware that leverages a SQL-based interface, requiring minimal effort to port to a new DBMS. Users can easily extend AQPHub by integrating different DBMSs and/or designing different AQP strategies. AQPHub shows negligible overhead while preserving the benefits of the state-of-the-art plan-based AQP methods. Our demonstration scenarios enable attendees to interact through a web interface and explore five database systems on four different AQP strategies and integration levels.</p>
@@ -137,8 +137,9 @@
 
                     <article class="pub-item">
                         <header>
-                            <div class="pub-title">Towards a Solution to the Management Scaling Paradox in Distributed LLM Inference</div>
+                            <div class="pub-title"><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=4f6CSL0AAAAJ&amp;citation_for_view=4f6CSL0AAAAJ:u-x6o8ySG0sC">Towards a Solution to the Management Scaling Paradox in Distributed LLM Inference</a></div>
                             <div class="pub-venue"><span class="tooltip" data-venue="European Workshop on Machine Learning and Systems"><a href="https://euromlsys.eu/">EuroMLSys</a></span></div>
+                            <div class="pub-authors">A. Noohi, B. Asoodeh, A. Barbalace</div>
                             <div class="pub-note">Accepted</div>
                             <details class="pub-abstract">
                                 <summary>Abstract</summary>
@@ -179,6 +180,7 @@
                     </ul>
                 </section>
 
+                <!-- Selected Projects section hidden on request (kept here for easy restore)
                 <section id="projects">
                     <h2>Selected Projects</h2>
 
@@ -217,13 +219,16 @@
                         <p>Conducted analysis and design of a hotel management system with UML, UI, and UX.</p>
                     </details>
                 </section>
+                -->
 
                 <section id="skills">
                     <h2>Skills</h2>
                     <ul class="skills">
-                        <li><strong>Programming languages:</strong> C++, C, Python, Scala.</li>
+                        <li><strong>Programming languages:</strong> C++, C, Python.</li>
                         <li><strong>DBMS internals &amp; systems:</strong> PostgreSQL (source-level research fork); multi-engine setup and deployment (DuckDB, PostgreSQL, Umbra, MariaDB, OpenGauss); JIT compilation pipelines.</li>
-                        <li><strong>AI &amp; data science:</strong> NumPy, Pandas, OpenCV, scikit-learn, TensorFlow, CUDA.</li>
+                        <li><strong>AI:</strong> Agentic AI, AI workloads (Retrieval-Augmented Generation (RAG), conversation, tool agent, etc.)</li>
+                        <li><strong>Inference frameworks:</strong> vLLM.</li>
+                        <li><strong>ML &amp; data science tools:</strong> NumPy, Pandas, OpenCV, scikit-learn, TensorFlow, CUDA.</li>
                         <li><strong>Modeling &amp; design:</strong> UML (Visual Paradigm), UI/UX (Adobe Illustrator).</li>
                         <li><strong>Writing tools:</strong> LaTeX.</li>
                     </ul>

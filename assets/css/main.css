@@ -214,6 +214,8 @@ strong { font-weight: 600; }
 .pub-venue { padding-left: 1em; }
 .pub-title { flex: 1 1 0; min-width: 60%; font-weight: 600; }
 .pub-title i { font-weight: 600; }
+.pub-title a { color: inherit; text-decoration: none; }
+.pub-title a:hover, .pub-title a:focus { color: var(--link-dark); text-decoration: underline; }
 .pub-venue { flex: 0 1 auto; margin-left: auto; text-align: right; }
 .pub-venue a { color: var(--link-dark); }
 .pub-authors { flex-basis: 100%; font-style: italic; }
