@@ -188,6 +188,7 @@ strong { font-weight: 600; }
 .page__content > section:first-child h2 { margin-top: 0.5em; }
 .page__content a { text-decoration: underline; }
 .page__content a:hover { color: #000; }
+.page__content a.link-disabled, .page__content a.link-disabled:hover { color: var(--link); cursor: default; }
 .page__content section { scroll-margin-top: 1em; }
 
 /* --- Publications ---------------------------------------------------------- */
